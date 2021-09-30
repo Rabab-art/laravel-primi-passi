@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Bienvenidos, {{$name}} {{$surname}}</h1>
+    <a href="{{ route('programs')}}">Programs </a>
 </body>
 </html>

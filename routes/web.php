@@ -25,3 +25,15 @@ dump($data);
 
 return view('home', $data);
 }) ->name('home');
+
+Route::get ('/programs', function(){
+    
+    $data=[
+        'lista_programma'=> [
+            'Visita turistica',
+            'Escursioni',
+            'Animazione'
+        ]
+        ];
+        return view( 'programs', $data);
+})->name('programs');
