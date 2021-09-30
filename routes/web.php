@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function (){
+//  Punto di riferimeno dentro la cartella 
+
+$data= [
+  'name'=> 'Juan Carlo',
+  'surname'=> 'Perez',  
+];
+
+dump($data);
+
+return view('home', $data);
+}) ->name('home');
